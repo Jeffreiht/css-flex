@@ -1,6 +1,6 @@
 # css-flex
-En esta pagina tenemos un formulario para agregar musicas 
-debe seguir estos pasos
+En esta pagina tenemos un formulario para agregar musicas.
+Para agregar musica favor seguir estos pasos
 1) buscar un link de un video en youtube, preferible de una cancion
 2) llenar los campos con su respectiva informacion.
 
