@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!--  BOOTSTRAP 4.5  -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
 </head>
+
 <body>
     <!--  NAVIGATION  -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            <a class="nav-link" href="#">Features</a>
-            <a class="nav-link" href="#">Pricing</a>
-            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </div>
+            <div class="navbar-nav">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </div>
         </div>
     </nav>
     <!--  HEADER  -->
@@ -29,55 +33,60 @@
         <h1>canciones mas pegadas mundialmente</h1>
     </header>
     <!--  BODY  -->
-    <div class="container">
+    <div class="container" id="primario">
         <main class="content-wraper">
             <h3>Republica Dominicana</h3>
             <div>
+                <!--PUESTO DE LA MUSICA-->
                 <h4>#</h4>
-                <ul class="lista">
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
+                <ul class="lista" id="numeros">
+
                 </ul>
             </div>
             <div>
+                <!--NOMBRE DE LA MUSICA-->
                 <h4>Cancion</h4>
-                <ul class="lista">
-                    <li><a href="https://www.youtube.com/watch?v=Q_gIYp078so" target="_blank">La curiosidad</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=Ou2c2aj5Fcw" target="_blank">Ay, Dios mio</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=wJT-YKmlWJc" target="_blank">Tatto Remix</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=yErttA9tEro" target="_blank">La jeepeta Remix</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=KilybZma5vY" target="_blank">Caramelo</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=Q_gIYp078so" target="_blank">La curiosidad</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=Ou2c2aj5Fcw" target="_blank">Ay, Dios mio</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=wJT-YKmlWJc" target="_blank">Tatto Remix</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=yErttA9tEro" target="_blank">La jeepeta Remix</a></li>
-                    <li><a href="https://www.youtube.com/watch?v=KilybZma5vY" target="_blank">Caramelo</a></li>
+                <ul class="lista" id="canciones">
+
                 </ul>
             </div>
             <div>
+                <!--NOMBRE DEL ARTISTA-->
                 <h4>Artista</h4>
-                <ul class="lista">
-                    <li>Jay Wheeler, DJ Nelson, Myke Towerrs</li>
-                    <li>Karol G</li>
-                    <li>Rauw Alejandro, Camilo</li>
-                    <li>Nio Garcia, Anuel AA, Brray, Juanka</li>
-                    <li>Ozuna</li>
-                    <li>Jay Wheeler, DJ Nelson, Myke Towerrs</li>
-                    <li>Karol G</li>
-                    <li>Rauw Alejandro, Camilo</li>
-                    <li>Nio Garcia, Anuel AA, Brray, Juanka</li>
-                    <li>Ozuna</li>
+                <ul class="lista" id="artistas">
+
                 </ul>
             </div>
         </main>
     </div>
+    <div class="container"></div>
+    <div class="row my-5">
+        <div class="col-md-4 offset-md-4">
+            <div class="card card-body">
+                <!--FORM FOR ADD MUSIC-->
+                <form id="form-music">
+                    <div class="form-group">
+                        <input type="number" id="puesto" placeholder="Puesto de la musica" class="form-control"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="cancion" placeholder="Nombre de la cancion" class="form-control"
+                            required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="link" placeholder="Link de la cancion" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="artista" placeholder="Nombre del artista" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <script src="./app.js"></script>
 </body>
+
 </html>

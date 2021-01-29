@@ -20,7 +20,7 @@ body{
     text-transform: uppercase;
 }
 
-.container{
+#primario{
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
@@ -59,4 +59,8 @@ body{
     background: #ffffff;
     color: #000000;
     transition: 1s ease;
+}
+.btn.btn-danger{
+    margin: 0;
+    padding: 0;   
 }
